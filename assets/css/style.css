@@ -1,0 +1,103 @@
+/* ------------- Main CSS file for Onix Digital -------------- */
+
+/* NavBar Area Start */
+.navbar {
+	height: 100px;
+	transition: all 0.5s ease 0s;
+}
+.nav-shadow {
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) !important;
+}
+
+@media screen and (max-width: 768px) {
+	#navbarNav {
+		background-color: var(--grey);
+		text-align: center;
+		margin-top: 10px;
+	}
+	#navbarNav ul li {
+		border-bottom: 1px solid #e7e7e7;
+	}
+	#navbarNav ul li:first-child {
+		border-top: 1px solid #e7e7e7;
+	}
+	#navbarNav ul li a {
+		padding: 15px 0;
+	}
+	.navbar-toggler {
+		border: none !important;
+	}
+	.navbar-toggler:focus {
+		box-shadow: none !important;
+	}
+}
+/* NavBar Area End */
+
+/* ------------ Utilities -------------- */
+/* Main colors and Fonts variable */
+:root {
+	--primary-color: #ff695f;
+	--secondary-color: #03a4ed;
+	--white: #fff;
+	--grey: #f7f7f7;
+	/* Font */
+	--primary-font: "Poppins", sans-serif;
+}
+body {
+	font-family: var(--primary-font);
+	height: 120vh;
+}
+/* Text colors */
+.text-primary {
+	color: var(--primary-color);
+}
+.text-secondary {
+	color: var(--secondary-color);
+}
+
+/* Background colors */
+.bg-primary {
+	background-color: var(--primary-color);
+}
+.bg-secondary {
+	background-color: var(--secondary-color);
+}
+.bg-grey {
+	background-color: var(--grey);
+}
+
+/* Buttons */
+.btn-main {
+	background-color: var(--secondary-color) !important;
+	color: var(--white) !important;
+	transition: all 0.3s !important;
+	border-radius: 23px !important;
+}
+.btn-main:hover {
+	background-color: var(--primary-color) !important;
+}
+
+.btn-2nd {
+	background-color: var(--primary-color) !important;
+	color: var(--white) !important;
+	transition: all 0.3s !important;
+	border-radius: 23px !important;
+	/* padding: initial 20px; */
+}
+.btn-2nd:hover {
+	background-color: var(--secondary-color) !important;
+}
+
+/* Hover states */
+.main-hover {
+	transition: all 0.3s ease 0s !important;
+	font-weight: 500;
+}
+.main-hover:hover {
+	color: var(--primary-color) !important;
+}
+
+nav .active,
+.nav-link.active {
+	color: var(--primary-color) !important;
+}
