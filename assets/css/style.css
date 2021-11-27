@@ -33,34 +33,88 @@
 }
 /* NavBar Area End */
 
+/* Hero section Start */
+#hero {
+	height: 500px;
+	margin-top: 100px;
+}
+/* .mobile-link i {
+	background-color: var(--primary-color);
+	transition: all 0.3s;
+}
+.mobile-link span {
+	color: var(--primary-color);
+	transition: all 0.3s;
+}
+.mobile-link:hover i {
+	background-color: var(--secondary-color) !important;
+}
+.mobile-link:hover span {
+	color: var(--secondary-color) !important;
+} */
+
+/* Right side image of hero secton */
+@media screen and (min-width: 992px) {
+	#hero::before {
+		content: "";
+		background-image: url(../images/banner-right-image.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: absolute;
+		right: 0;
+		top: 100px;
+		width: 550px;
+		height: 445px;
+		z-index: -1;
+	}
+}
+/* Left side image of hero secton */
+#hero::after {
+	content: "";
+	background-image: url(../images/baner-dec-left.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	left: 0;
+	top: 100px;
+	width: 280px;
+	height: 500px;
+	z-index: -1;
+}
+
+/* Hero section End */
+
 /* ------------ Utilities -------------- */
 /* Main colors and Fonts variable */
 :root {
 	--primary-color: #ff695f;
 	--secondary-color: #03a4ed;
 	--white: #fff;
-	--grey: #f7f7f7;
+	--grey: #fafafa;
 	/* Font */
 	--primary-font: "Poppins", sans-serif;
 }
+
+/* Body font */
 body {
 	font-family: var(--primary-font);
-	height: 120vh;
 }
 /* Text colors */
 .text-primary {
-	color: var(--primary-color);
+	color: var(--primary-color) !important;
 }
 .text-secondary {
-	color: var(--secondary-color);
+	color: var(--secondary-color) !important;
 }
 
 /* Background colors */
 .bg-primary {
-	background-color: var(--primary-color);
+	background-color: var(--primary-color) !important;
 }
 .bg-secondary {
-	background-color: var(--secondary-color);
+	background-color: var(--secondary-color) !important;
 }
 .bg-grey {
 	background-color: var(--grey);
@@ -82,7 +136,6 @@ body {
 	color: var(--white) !important;
 	transition: all 0.3s !important;
 	border-radius: 23px !important;
-	/* padding: initial 20px; */
 }
 .btn-2nd:hover {
 	background-color: var(--secondary-color) !important;
@@ -100,4 +153,20 @@ body {
 nav .active,
 .nav-link.active {
 	color: var(--primary-color) !important;
+}
+
+/* Others */
+a {
+	text-decoration: none;
+}
+.icon-circle {
+	padding: 10px;
+	border-radius: 50%;
+	color: var(--white);
+}
+.fw-500 {
+	font-weight: 600;
+}
+.btn:focus {
+	box-shadow: none;
 }
