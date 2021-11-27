@@ -1,6 +1,6 @@
 /* ------------- Main CSS file for Onix Digital -------------- */
 
-/* NavBar Area Start */
+/* ----- NavBar Area Start ----- */
 .navbar {
 	height: 100px;
 	transition: all 0.5s ease 0s;
@@ -31,27 +31,13 @@
 		box-shadow: none !important;
 	}
 }
-/* NavBar Area End */
+/* ----- NavBar Area End ----- */
 
-/* Hero section Start */
+/* ----- Hero section Start ----- */
 #hero {
 	height: 500px;
 	margin-top: 100px;
 }
-/* .mobile-link i {
-	background-color: var(--primary-color);
-	transition: all 0.3s;
-}
-.mobile-link span {
-	color: var(--primary-color);
-	transition: all 0.3s;
-}
-.mobile-link:hover i {
-	background-color: var(--secondary-color) !important;
-}
-.mobile-link:hover span {
-	color: var(--secondary-color) !important;
-} */
 
 /* Right side image of hero secton */
 @media screen and (min-width: 992px) {
@@ -84,7 +70,47 @@
 	z-index: -1;
 }
 
-/* Hero section End */
+/* Swiper style */
+.swiper {
+	margin: 0;
+}
+@media screen and (max-width: 1200px) {
+	.swiper {
+		width: 535px;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.swiper {
+		width: 700px;
+	}
+}
+@media screen and (max-width: 992px) {
+	.swiper {
+		width: 100%;
+	}
+}
+.swiper-pagination-bullet {
+	background: transparent;
+	opacity: 1;
+	font-size: 20px;
+	font-weight: 600;
+	margin: 0 10px !important;
+}
+.swiper-pagination-bullet-active {
+	color: var(--primary-color);
+	text-decoration: underline;
+	text-underline-offset: 5px;
+	text-decoration-thickness: 3px;
+	transition: all 0.4s;
+}
+.swiper-pagination {
+	text-align: start;
+	bottom: -30px !important;
+	left: -10px !important;
+}
+/* End swiper style */
+
+/* ----- Hero section End ----- */
 
 /* ------------ Utilities -------------- */
 /* Main colors and Fonts variable */

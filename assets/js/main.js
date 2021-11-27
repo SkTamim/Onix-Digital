@@ -21,3 +21,22 @@ const toggle_btn = document.querySelector(".menu-trigger");
 toggle_btn.addEventListener("click", function () {
 	toggle_btn.classList.toggle("active");
 });
+
+// Swiper JS Initializetion
+const swiper = new Swiper(".swiper", {
+	// Loop
+	loop: true,
+
+	// Autoplay
+	autoplay: {
+		delay: 4000,
+	},
+	//pagination
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+		renderBullet: function (index, className) {
+			return '<span class="' + className + '">' + (index + 1) + "</span>";
+		},
+	},
+});
