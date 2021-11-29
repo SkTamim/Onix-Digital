@@ -169,9 +169,21 @@
 	opacity: 1;
 }
 #services hr {
-	color: rgba(0, 0, 0, 0.575);
+	color: rgba(0, 0, 0, 0.3);
 }
 /* ----- Services section End ----- */
+
+/* ----- Projects Done section Start ----- */
+#projects-done h2 {
+	width: 100% !important;
+	font-size: 30px;
+	text-align: start !important;
+	margin: 0;
+}
+#projects-done hr {
+	color: rgba(0, 0, 0, 0.2);
+}
+/* ----- Projects Done section End ----- */
 
 /* ------------ Utilities -------------- */
 /* Main colors and Fonts variable */
@@ -257,6 +269,8 @@ a {
 .btn:focus {
 	box-shadow: none;
 }
+
+/* Main Heading */
 .section-heading {
 	max-width: 400px;
 	margin: 0 auto;

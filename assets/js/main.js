@@ -45,6 +45,9 @@ const swiper1 = new Swiper(".swiper1", {
 
 // Swiper JS Initializetion of services section
 const swiper2 = new Swiper(".swiper2", {
+	// Loop
+	loop: true,
+
 	// Autoplay
 	autoplay: {
 		delay: 4000,
