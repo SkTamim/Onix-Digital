@@ -22,8 +22,8 @@ toggle_btn.addEventListener("click", function () {
 	toggle_btn.classList.toggle("active");
 });
 
-// Swiper JS Initializetion
-const swiper = new Swiper(".swiper", {
+// Swiper JS Initializetion of hero section
+const swiper1 = new Swiper(".swiper1", {
 	// Loop
 	loop: true,
 
@@ -31,12 +31,46 @@ const swiper = new Swiper(".swiper", {
 	autoplay: {
 		delay: 4000,
 	},
+	// Coursor
+	grabCursor: true,
 	//pagination
 	pagination: {
-		el: ".swiper-pagination",
+		el: ".swiper-pagination1",
 		clickable: true,
 		renderBullet: function (index, className) {
 			return '<span class="' + className + '">' + (index + 1) + "</span>";
+		},
+	},
+});
+
+// Swiper JS Initializetion of services section
+const swiper2 = new Swiper(".swiper2", {
+	// Loop
+	loop: true,
+
+	// slidesPerView: 3,
+	// spaceBetween: 30,
+
+	// Autoplay
+	autoplay: {
+		delay: 4000,
+	},
+	// Coursor
+	grabCursor: true,
+	//pagination
+	pagination: {
+		el: ".swiper-pagination2",
+		clickable: true,
+	},
+	// Default parameters
+	slidesPerView: 1,
+	spaceBetween: 10,
+	// Responsive breakpoints
+	breakpoints: {
+		// when window width is >= 640px
+		1000: {
+			slidesPerView: 3,
+			spaceBetween: 10,
 		},
 	},
 });
