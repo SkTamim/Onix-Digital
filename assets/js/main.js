@@ -46,10 +46,7 @@ const swiper1 = new Swiper(".swiper1", {
 // Swiper JS Initializetion of services section
 const swiper2 = new Swiper(".swiper2", {
 	// Loop
-	loop: true,
-
-	// slidesPerView: 3,
-	// spaceBetween: 30,
+	// loop: true,
 
 	// Autoplay
 	autoplay: {
@@ -61,16 +58,5 @@ const swiper2 = new Swiper(".swiper2", {
 	pagination: {
 		el: ".swiper-pagination2",
 		clickable: true,
-	},
-	// Default parameters
-	slidesPerView: 1,
-	spaceBetween: 10,
-	// Responsive breakpoints
-	breakpoints: {
-		// when window width is >= 640px
-		1000: {
-			slidesPerView: 3,
-			spaceBetween: 10,
-		},
 	},
 });
