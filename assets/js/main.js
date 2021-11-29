@@ -45,18 +45,32 @@ const swiper1 = new Swiper(".swiper1", {
 
 // Swiper JS Initializetion of services section
 const swiper2 = new Swiper(".swiper2", {
-	// Loop
-	// loop: true,
-
 	// Autoplay
 	autoplay: {
 		delay: 4000,
 	},
 	// Coursor
 	grabCursor: true,
+
 	//pagination
 	pagination: {
 		el: ".swiper-pagination2",
 		clickable: true,
+	},
+
+	// Slides
+	slidesPerView: 1,
+	spaceBetween: 10,
+
+	// Responsive breakpoints
+	breakpoints: {
+		555: {
+			slidesPerView: 1,
+			spaceBetween: 20,
+		},
+		600: {
+			slidesPerView: 2,
+			spaceBetween: 20,
+		},
 	},
 });
