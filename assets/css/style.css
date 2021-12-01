@@ -135,7 +135,6 @@
 .my-service-card {
 	box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
 	border-radius: 20px;
-	max-width: 350px;
 	border: none;
 	margin: 20px;
 	padding: 20px;
@@ -143,25 +142,18 @@
 	user-select: none;
 }
 
-@media screen and (max-width: 400px) {
-	.my-service-card {
-		width: 300px;
-	}
-}
-
 /* Swiper style for services section */
 #services .swiper {
 	padding-bottom: 30px !important;
 }
 #services .swiper-pagination2 {
-	bottom: 30px;
+	bottom: 80px;
 }
 #services .swiper-pagination-bullet {
 	background: var(--primary-color);
 	width: 10px;
 	height: 10px;
 	opacity: 0.4;
-	margin: 0 10px !important;
 }
 #services .swiper-pagination-bullet-active {
 	color: var(--primary-color);
@@ -184,6 +176,112 @@
 	color: rgba(0, 0, 0, 0.2);
 }
 /* ----- Projects Done section End ----- */
+
+/* ----- Portfolio Section Start ----- */
+#portfolio {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+#portfolio::before {
+	content: "";
+	background: url(../images/portfolio-left-dec.png) no-repeat;
+	position: absolute;
+	top: 35px;
+	left: 40px;
+	width: 350px;
+	height: 350px;
+	z-index: -1;
+}
+.portfolio-card {
+	margin: 0 10px;
+}
+.portfolio-card:hover .portfolio-card-hover {
+	transform: translateY(0);
+}
+.portfolio-card img {
+	border-radius: 20px;
+	transition: 0.4s;
+	width: 100%;
+}
+.portfolio-card:hover img {
+	opacity: 0.7;
+}
+.portfolio-card-hover {
+	position: absolute;
+	bottom: 20px;
+	right: 30px;
+	background: url(../images/hover-bg.png) no-repeat;
+	width: 250px;
+	height: 215px;
+	padding: 20px;
+	transform: translateY(110%);
+	transition: all 0.4s;
+	z-index: 2;
+}
+.protfolio-details {
+	padding: 10px;
+	position: absolute;
+	bottom: 10px;
+	right: 30px;
+}
+
+@media screen and (max-width: 430px) {
+	.portfolio-card-hover {
+		padding: 0;
+		bottom: -5px;
+		right: 20px;
+		background: url(../images/hover-bg.png) no-repeat;
+		background-size: 100%;
+		width: 160px;
+		height: 156px;
+		padding: 0px;
+	}
+	.protfolio-details {
+		padding: 0 5px;
+		position: absolute;
+		bottom: 18px;
+		right: 8px;
+	}
+}
+
+/* Swiper navigation button style */
+
+.swiper-button-prev,
+.swiper-button-next {
+	font-size: 20px;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	opacity: 0.6;
+	transition: 0.3s;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+	opacity: 1;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+	font-size: 16px;
+}
+.swiper-button-prev {
+	left: 20px;
+}
+.swiper-button-next {
+	right: 20px;
+}
+#portfolio .swiper-pagination-bullet {
+	background: var(--primary-color);
+	width: 10px;
+	height: 10px;
+	opacity: 0.4;
+}
+#portfolio .swiper-pagination-bullet-active {
+	color: var(--primary-color);
+	transition: all 0.4s;
+	opacity: 1;
+}
+
+/* ----- Portfolio Section End ----- */
 
 /* ------------ Utilities -------------- */
 /* Main colors and Fonts variable */

@@ -59,21 +59,58 @@ const swiper2 = new Swiper(".swiper2", {
 	pagination: {
 		el: ".swiper-pagination2",
 		clickable: true,
+		dynamicBullets: true,
 	},
 
-	// Slides
+	// Slides preview
 	slidesPerView: 1,
-	spaceBetween: 10,
 
 	// Responsive breakpoints
 	breakpoints: {
-		555: {
-			slidesPerView: 1,
-			spaceBetween: 20,
+		1200: {
+			slidesPerView: 3,
 		},
-		600: {
+		768: {
 			slidesPerView: 2,
-			spaceBetween: 20,
+		},
+	},
+});
+
+// Swiper JS Initializetion of portfolio section
+const swiper3 = new Swiper(".swiper3", {
+	// Loop
+	loop: true,
+
+	// Autoplay
+	autoplay: {
+		delay: 4000,
+	},
+	// Coursor
+	grabCursor: true,
+
+	//pagination
+	pagination: {
+		el: ".swiper-pagination3",
+		clickable: true,
+		dynamicBullets: true,
+	},
+
+	// Navigation
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+
+	// Slides preview
+	slidesPerView: 1,
+
+	// Responsive breakpoints
+	breakpoints: {
+		1200: {
+			slidesPerView: 3,
+		},
+		768: {
+			slidesPerView: 2,
 		},
 	},
 });
