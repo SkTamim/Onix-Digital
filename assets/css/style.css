@@ -178,19 +178,22 @@
 /* ----- Projects Done section End ----- */
 
 /* ----- Portfolio Section Start ----- */
-#portfolio {
-	overflow-x: hidden;
-	overflow-y: hidden;
-}
 #portfolio::before {
 	content: "";
-	background: url(../images/portfolio-left-dec.png) no-repeat;
+	background: url(../images/portfolio-left-dec.png);
 	position: absolute;
 	top: 35px;
 	left: 40px;
-	width: 350px;
-	height: 350px;
+	width: 342px;
+	height: 311px;
 	z-index: -1;
+	overflow: hidden;
+}
+@media screen and (max-width: 500px) {
+	#portfolio::before {
+		left: 10px;
+		width: 280px;
+	}
 }
 .portfolio-card {
 	margin: 0 10px;
@@ -208,8 +211,8 @@
 }
 .portfolio-card-hover {
 	position: absolute;
-	bottom: 20px;
-	right: 30px;
+	bottom: 10px;
+	right: 40px;
 	background: url(../images/hover-bg.png) no-repeat;
 	width: 250px;
 	height: 215px;
@@ -280,8 +283,64 @@
 	transition: all 0.4s;
 	opacity: 1;
 }
+.swiper-pagination3 {
+	bottom: -30px !important;
+}
 
 /* ----- Portfolio Section End ----- */
+
+/* ----- Our Plans Section Start ----- */
+#plans::before {
+	content: "";
+	background: url(../images/tables-left-dec.png) no-repeat;
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 430px;
+	height: 430%;
+	z-index: -1;
+}
+#plans::after {
+	content: "";
+	background: url(../images/tables-right-dec.png) no-repeat;
+	position: absolute;
+	top: 20px;
+	right: 0;
+	width: 360px;
+	height: 430%;
+	z-index: -1;
+}
+@media screen and (max-width: 500px) {
+	#plans::before {
+		width: 280px;
+	}
+	#plans::after {
+		width: 280px;
+	}
+}
+.plan-card {
+	z-index: 2;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 50px;
+	text-align: center;
+	box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+	border-radius: 45px;
+}
+.plan-card-1 {
+	background: url(../images/first-plan-bg.png) #fff;
+}
+.plan-card-2 {
+	background: url(../images/second-plan-bg.png) #fff;
+}
+.plan-card-3 {
+	background: url(../images/third-plan-bg.png) #fff;
+}
+.plan-card .btn-main {
+	padding: 12px 25px;
+}
+
+/* ----- Our Plans Section End ----- */
 
 /* ------------ Utilities -------------- */
 /* Main colors and Fonts variable */
@@ -295,7 +354,8 @@
 }
 
 /* Body font */
-body {
+body,
+html {
 	font-family: var(--primary-font);
 }
 /* Text colors */
