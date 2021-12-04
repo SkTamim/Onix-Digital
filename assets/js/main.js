@@ -114,3 +114,46 @@ const swiper3 = new Swiper(".swiper3", {
 		},
 	},
 });
+
+// JS for Videos Tabs
+let videoHeadings = document.querySelectorAll(".video-heading");
+let videoThumbs = document.querySelectorAll(".video-thumb");
+
+videoHeadings.forEach((element, index) => {
+	element.addEventListener("click", () => {
+		if (element.classList.contains("active")) {
+			checkClass(index);
+		} else {
+			element.classList.add("active");
+			checkClass(index);
+		}
+	});
+});
+
+function checkClass(index) {
+	videoHeadings.forEach((inElement, inIndex) => {
+		if (index !== inIndex) {
+			inElement.classList.remove("active");
+		}
+		if (index === inIndex) {
+			videoThumbs.forEach((videoElement, videoIndex) => {
+				if (videoIndex === inIndex) {
+					videoElement.classList.add("active");
+				} else {
+					videoElement.classList.remove("active");
+				}
+			});
+		}
+	});
+}
+
+// Map of Contact section
+// <!-- Custom Code for Mapbox -->
+mapboxgl.accessToken =
+	"pk.eyJ1Ijoic2t0YW1pbSIsImEiOiJja3dnb2d6YmwwcWhiMm9tajJjcmloaTJmIn0.0fyeeNMPsc9PIg4VHqQlQg";
+const map = new mapboxgl.Map({
+	container: "map", // container ID
+	style: "mapbox://styles/mapbox/streets-v11", // style URL
+	center: [88.3663641195769, 22.57691856692489], // starting position [lng, lat]
+	zoom: 12, // starting zoom
+});
