@@ -339,8 +339,54 @@
 .plan-card .btn-main {
 	padding: 12px 25px;
 }
-
 /* ----- Our Plans Section End ----- */
+
+/* ----- SEO check section Start ----- */
+.seoBg {
+	background: url(../images/subscribe-bg.png) no-repeat;
+	background-size: cover;
+	padding: 36px 10px;
+	border-radius: 20px;
+}
+.checkSeoForm input {
+	border: none;
+	outline: none;
+	box-shadow: none !important;
+}
+.checkSeoForm {
+	background: var(--white);
+	border-radius: 50px;
+	margin-bottom: 15px;
+}
+#checkSeoSubmit {
+	padding: 10px 60px;
+}
+.checkSeoForm::after {
+	content: "";
+	background-image: url(../images/subscribe-dec.png);
+	position: absolute;
+	width: 195px;
+	height: 138px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	right: -75px;
+	top: -140px;
+}
+
+@media screen and (max-width: 768px) {
+	.checkSeoForm {
+		background: var(--white);
+		border-radius: 10px;
+		margin-bottom: 15px;
+	}
+	.checkSeoForm input {
+		margin: 10px 0;
+	}
+	.checkSeoForm::after {
+		display: none;
+	}
+}
+/* ----- SEO check section End ----- */
 
 /* ------------ Utilities -------------- */
 /* Main colors and Fonts variable */
@@ -440,4 +486,10 @@ a {
 	text-align: center;
 	line-height: 1rem;
 	opacity: 0.4;
+}
+
+/* Custom Selaction  */
+::selection {
+	background: var(--secondary-color);
+	color: var(--white);
 }
