@@ -297,7 +297,7 @@
 	top: 40px;
 	left: 0;
 	width: 430px;
-	height: 430%;
+	height: 300%;
 	z-index: -1;
 }
 #plans::after {
@@ -307,7 +307,7 @@
 	top: 20px;
 	right: 0;
 	width: 360px;
-	height: 430%;
+	height: 300%;
 	z-index: -1;
 }
 @media screen and (max-width: 500px) {
@@ -597,6 +597,55 @@
 }
 /* ----- contact section End ----- */
 
+/* ----- Footer section Start ----- */
+.footer-link {
+	color: #a3a3a3;
+	transition: 0.3s;
+	margin: 5px 0;
+	padding: 5px 0;
+}
+.footer-para {
+	color: #a3a3a3;
+}
+.footer-link:hover {
+	color: var(--primary-color);
+}
+footer .social-links {
+	width: 35px;
+	height: 35px;
+	border-radius: 50% !important;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 5px;
+}
+.newsLatterForm {
+	background: var(--secondary-color);
+	border-radius: 50px;
+	min-width: 262px;
+	max-width: 262px;
+}
+.newsLatterForm ::selection {
+	background: var(--grey);
+	color: var(--primary-color);
+}
+.newsLatterForm input {
+	background: transparent;
+	border: none;
+	outline: none;
+	padding: 10px;
+	color: var(--white);
+	border-right: 1px solid #e7e7e77c;
+}
+.newsLatterForm a {
+	color: var(--white);
+	padding: 6px;
+	border-radius: 50px;
+	width: 30px;
+}
+/* ----- Footer section End ----- */
+
 /* ------------ Utilities -------------- */
 /* Main colors and Fonts variable */
 :root {
@@ -609,8 +658,7 @@
 }
 
 /* Body font */
-body,
-html {
+body {
 	font-family: var(--primary-font);
 }
 /* Text colors */
