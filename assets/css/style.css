@@ -646,6 +646,74 @@ footer .social-links {
 }
 /* ----- Footer section End ----- */
 
+/* ---------------- Preloader Start-------------- */
+.preloader {
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--white);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9999;
+	/* pointer-events:none; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.preloader-animation {
+	display: flex;
+}
+.preloader-animation span {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: var(--primary-color);
+	display: block;
+	margin: 10px;
+}
+.preloader-animation span:nth-child(1) {
+	animation-name: preloaderAnime;
+	animation-duration: 0.5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+}
+.preloader-animation span:nth-child(2) {
+	animation-name: preloaderAnime;
+	animation-duration: 0.5s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0.2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+}
+.preloader-animation span:nth-child(3) {
+	animation-name: preloaderAnime;
+	animation-duration: 0.5s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0.4s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+}
+.preloader-animation span:nth-child(4) {
+	animation-name: preloaderAnime;
+	animation-duration: 0.5s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0.6s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+}
+@keyframes preloaderAnime {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(2);
+	}
+}
+/* ---------------- Preloader End-------------- */
+
 /* ------------ Utilities -------------- */
 /* Main colors and Fonts variable */
 :root {

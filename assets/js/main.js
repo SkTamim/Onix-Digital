@@ -148,7 +148,6 @@ function checkClass(index) {
 }
 
 // Map of Contact section
-// <!-- Custom Code for Mapbox -->
 mapboxgl.accessToken =
 	"pk.eyJ1Ijoic2t0YW1pbSIsImEiOiJja3dnb2d6YmwwcWhiMm9tajJjcmloaTJmIn0.0fyeeNMPsc9PIg4VHqQlQg";
 const map = new mapboxgl.Map({
@@ -156,4 +155,11 @@ const map = new mapboxgl.Map({
 	style: "mapbox://styles/mapbox/streets-v11", // style URL
 	center: [88.3663641195769, 22.57691856692489], // starting position [lng, lat]
 	zoom: 12, // starting zoom
+});
+
+// Preloader Settion
+let Preloader = document.querySelector(".preloader");
+
+window.addEventListener("load", () => {
+	Preloader.style.display = "none";
 });

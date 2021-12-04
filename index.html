@@ -41,11 +41,11 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#mainNavigation" data-bs-offset="100" tabindex="0">
     <!-- ***** Header Start ***** -->
     <header>
         <!-- ***** NavBar Start ***** -->
-        <nav class="navbar navbar-expand-md navbar-light bg-grey fixed-top py-4">
+        <nav class="navbar navbar-expand-md navbar-light bg-grey fixed-top py-4" id="mainNavigation">
             <div class="container">
                 <!-- Logo -->
                 <a class="navbar-brand" href="#">
@@ -61,25 +61,28 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item mx-md-2">
-                            <a class="nav-link active main-hover" href="#">Home</a>
+                            <a class="nav-link main-hover active" href="#">Home</a>
                         </li>
                         <li class="nav-item mx-2">
-                            <a class="nav-link main-hover" href="#">Services</a>
+                            <a class="nav-link main-hover" href="#services">Services</a>
                         </li>
                         <li class="nav-item mx-2">
-                            <a class="nav-link main-hover" href="#">About</a>
+                            <a class="nav-link main-hover" href="#projects-done">About</a>
                         </li>
                         <li class="nav-item mx-2">
-                            <a class="nav-link main-hover" href="#">Portfolio</a>
+                            <a class="nav-link main-hover" href="#portfolio">Portfolio</a>
                         </li>
                         <li class="nav-item mx-2">
-                            <a class="nav-link main-hover" href="#">Videos</a>
+                            <a class="nav-link main-hover" href="#plans">Plans</a>
                         </li>
                         <li class="nav-item mx-2">
-                            <a class="nav-link main-hover" href="#">Contact Us</a>
+                            <a class="nav-link main-hover" href="#video">Videos</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link main-hover" href="#contact">Contact Us</a>
                         </li>
                         <li class="nav-item mx-2 d-lg-block d-none">
-                            <a class="nav-link btn-2nd px-3" href="#">Contact Us Now</a>
+                            <a class="nav-link btn-2nd px-3" href="#contact">Contact Us Now</a>
                         </li>
 
                     </ul>
@@ -671,6 +674,16 @@
     <!-- ***** Footer section End ***** -->
 
 
+    <!-- ********** Preloader Start ********** -->
+    <div class="preloader">
+        <div class="preloader-animation">
+            <span> </span>
+            <span> </span>
+            <span> </span>
+            <span> </span>
+        </div>
+    </div>
+    <!-- ********** Preloader End ********** -->
 
 
 
