@@ -763,6 +763,7 @@ footer .social-links {
 	padding: 10px;
 	color: var(--white);
 	border-right: 1px solid #e7e7e77c;
+	width: 85%;
 }
 .newsLatterForm a {
 	color: var(--white);
